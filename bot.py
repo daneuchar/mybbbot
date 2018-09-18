@@ -74,4 +74,4 @@ async def method3(ctx, *args):
     else:
         await client.say("Wrong Format kindly use this format: .SectionName Thread Title ; Thread Content")
 
-client.run(os.getenv(TOKEN))
+client.run(os.getenv('TOKEN'))
