@@ -2,8 +2,6 @@ import requests
 import discord
 from discord.ext import commands
 
-TOKEN = 'NDg5MDY5NzE1NDAzMzA5MDY2.DnlbSQ.WDw-HSh9rm9QolC9_lwhUYg2Y3k'
-
 client = commands.Bot(command_prefix = '.')
 
 
@@ -76,4 +74,4 @@ async def method3(ctx, *args):
     else:
         await client.say("Wrong Format kindly use this format: .SectionName Thread Title ; Thread Content")
 
-client.run(TOKEN)
+client.run(os.getenv(TOKEN))
